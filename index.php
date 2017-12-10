@@ -38,7 +38,12 @@
 
 		generate_pdf( $products, $customer_order_info );
 
-		$allowed_statuses = [ 'customer_processing_order' ];
+		$allowed_statuses = [
+			'customer_processing_order',
+			'customer_on_hold_order',
+			'customer_completed_order',
+			'customer_invoice'
+		];
 		if ( isset( $status ) && in_array( $status, $allowed_statuses ) ) {
 			$attachments[] = WC_PDF_UPLOADS . DIRECTORY_SEPARATOR . "woo-pdf-generator" . DIRECTORY_SEPARATOR . "lunchzbox.pdf";
 		}
