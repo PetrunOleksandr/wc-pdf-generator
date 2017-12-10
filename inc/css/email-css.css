@@ -1,0 +1,77 @@
+.pdf-header{
+    padding: 36px 48px;
+    display: block;
+    background-color: #557da1;
+}
+.pdf-header-txt{
+    color: #ffffff;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 150%;
+    margin: 0;
+    text-align: left;
+}
+.pdf-body{
+    padding: 48px 48px 0;
+    border: 1px solid;
+    border-color: grey;
+    color: #737373;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: left;
+}
+.order-number{
+    color: #557da1;
+    font-weight: normal;
+    margin-right: 5px;
+}
+.order-number span{
+    color: #557da1;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 0 0 18px;
+}
+.pdf-table{
+    width: 100%;
+    margin: 10px 0 25px 0;
+    font-family: 'Helvetica Neue',Helvetica,Roboto,Arial,sans-serif;
+    color: #737373;
+    border: 1px solid #e4e4e4;
+}
+.pdf-table td, .pdf-table th{
+    text-align:left;
+    color:#737373;
+    border:1px solid #e4e4e4;
+    padding:12px;
+}
+.order-address-title{
+    color: #557da1;
+    display: block;
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 130%;
+    margin: 0 0 18px;
+    text-align: left;
+}
+.order-address-block{
+    margin: 0 0 25px 0;
+}
+.order-address-block address{
+    padding:12px 12px 0;
+    color:#737373;
+    border:1px solid #e4e4e4;
+}
+.pdf-body-footer{
+    padding: 48px;
+    border: 0;
+    color: #99b1c7;
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 125%;
+    text-align: center;
+}
