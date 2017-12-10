@@ -22,8 +22,8 @@
 		$mpdf->Output( WC_PDF_UPLOADS . DIRECTORY_SEPARATOR . "woo-pdf-generator" . DIRECTORY_SEPARATOR . "lunchzbox.pdf", 'F' );
 	}
 
-	add_filter( 'woocommerce_email_attachments', 'attach_terms_conditions_pdf_to_email', 10, 3 );
-	function attach_terms_conditions_pdf_to_email( $attachments, $status, $order ) {
+	add_filter( 'woocommerce_email_attachments', 'attach_pdf_to_email', 10, 3 );
+	function attach_pdf_to_email( $attachments, $status, $order ) {
 		$order_items         = $order->get_items();
 		$customer_order_info = json_decode( $order, true );
 		$products            = [];
